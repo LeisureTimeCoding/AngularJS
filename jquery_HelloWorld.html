@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var name = $('#name');
+            var greeting = $('#greeting');
+
+            name.keyup(function () {
+                greeting.text('Hello ' + name.val() + '!');
+            })
+
+        })
+    </script>
+</head>
+<body>
+<label for="name"><input type="text" id="name"/></label>
+
+<h2 id="greeting"></h2>
+</body>
+</html>
